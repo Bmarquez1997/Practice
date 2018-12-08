@@ -12,7 +12,11 @@ public class Numbers {
 		return Math.floor(Math.PI * Math.pow(10, N)) / Math.pow(10, N);
 	}
 	
-	//Given an integer N, return e to the Nth digit
+	/**
+	 *  Given an integer N, return e to the Nth digit
+	 * @param  N    The number of digits (after the decimal place) you want
+	 * @return      E, with N digits after the decimal place
+	 */
 	public static double getNthDigitOfE(int N) {
 		return Math.floor(Math.E * Math.pow(10, N)) / Math.pow(10, N);
 	}
