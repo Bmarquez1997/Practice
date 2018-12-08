@@ -26,4 +26,23 @@ class NumbersTest {
 		assertEquals(Numbers.getNthDigitOfPi(100), Pi100Digits);
 	}
 
+	/*
+	 *  Nth Digit of E Test cases 
+	 */
+	@Test
+	void ETo3Digits() {
+		assertEquals(Numbers.getNthDigitOfE(2), 2.71);
+	}
+	
+	@Test
+	void ETo0Digits() {
+		assertEquals(Numbers.getNthDigitOfE(0), 2.0);
+	}
+	
+	@Test
+	void ETo100Digits() {
+		double E100Digits = 2.7182818284590452353602874713526624977572470936999595749669676277240766303547594571382178525166427427;
+		assertEquals(Numbers.getNthDigitOfE(100), E100Digits);
+	}
+	
 }
