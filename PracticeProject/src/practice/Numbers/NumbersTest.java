@@ -45,4 +45,35 @@ class NumbersTest {
 		assertEquals(Numbers.getNthDigitOfE(100), E100Digits);
 	}
 	
+	/*
+	 * Fibonnaci Sequence Test Cases
+	 */
+	@Test
+	void fibonnaciFirst2() {
+		int[] expected = {1, 1};
+		int[] actual = Numbers.getFibonacciSequence(2);
+		for(int i = 0; i < 2; i++) {
+			assertEquals(expected[i], actual[i]);
+		}
+	}
+	
+	@Test
+	void fibonnaciFirst3() {
+		int[] expected = {1, 1, 2};
+		int[] actual = Numbers.getFibonacciSequence(3);
+		for(int i = 0; i < 3; i++) {
+			assertEquals(expected[i], actual[i]);
+		}
+	}
+	
+	@Test
+	void fibonnaciFirst10() {
+		int[] expected = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55};
+		int[] actual = Numbers.getFibonacciSequence(10);
+		for(int i = 0; i < 10; i++) {
+			assertEquals(expected[i], actual[i]);
+		}
+	}
+	
+	
 }
